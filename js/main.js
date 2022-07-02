@@ -1,7 +1,7 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
-navToggle = document.getElementById('nav-toggle'),
-navClose = document.getElementById('nav-close')
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -32,7 +32,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
-  skillsHeader = document.querySelectorAll('.skills__header')
+      skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills() {
   let itemClass = this.parentNode.className
@@ -138,9 +138,11 @@ function scrollActive() {
     const sectionId = current.getAttribute('id')
 
     if(scrolly > sectionTop && scrolly <= sectionTop + sectionHeight) {
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+      .classList.add('active-link')
     }else{
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+      .classList.remove('active-link')
     }
   })
 }
@@ -150,7 +152,8 @@ window.addEventListener('scroll', scrollActive)
 function scrollHeader(){
   const nav = document.getElementById('header')
   // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+  if(this.scrollY >= 80) nav.classList.add('scroll-header'
+  ); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
