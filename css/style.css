@@ -869,6 +869,7 @@ img {
   border: none;
   outline: none;
   padding: .25rem .5rem 0;
+  resize: none;
 }
 
 /*==================== MEDIA QUERIES ====================*/
@@ -933,13 +934,6 @@ img {
   .testimonial__description {
     text-align: center;
   }
-}
-
-/*==================== SERVICES ====================*/
-.services__container {
-  gap: 1.5rem;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
 }
 
 .services__content {
@@ -1298,13 +1292,6 @@ img {
     -ms-grid-columns: .5fr;
         grid-template-columns: .5fr;
   }
-  .services__container {
-    -ms-grid-columns: (218px)[3];
-        grid-template-columns: repeat(3, 218px);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .services__icon {
     font-size: 3rem;
   }
@@ -1391,10 +1378,6 @@ img {
   .home__social {
     -webkit-transform: translateX(-6rem);
             transform: translateX(-6rem);
-  }
-  .services__container {
-    -ms-grid-columns: (238px)[3];
-        grid-template-columns: repeat(3, 238px);
   }
   .portfolio__content {
     -webkit-column-gap: 5rem;
